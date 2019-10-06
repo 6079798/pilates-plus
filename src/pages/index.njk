@@ -1,0 +1,314 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero__inner">
+            <h1 class="title hero__title">Студия пилатеса</h1>
+            <h2 class="hero__slogan">Твое здоровое тело через 10 занятий</h2>
+            <a data-scroll href="#prices" class="hero__btn">Смотреть расписание</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2 class="title about__title">О пилатесе</h2>
+        <div class="about__text">
+            <p class="text">
+                Пилатес соединяет элементы растяжки с элементами силовой тренировки
+            </p>
+            <p class="text">Комплекс упражнений укрепляет мышцы пресса и спины, улучшает гибкость мышц и связок,
+                подвижность суставов и избавляет от дискомфорта в позвоночнике</p>
+        </div>
+        <a data-scroll href="#training" class="about__more">Подробнее</a>
+    </section>
+    <section id="prices" class="prices">
+        <h2 class="title prices__title">Расписание и стоимость</h2>
+        <div class="prices__items">
+            <div class="prices__item">
+                <span class="prices__no">01</span>
+                <h3 class="prices__level">
+                    уровень <span>новичок</span>
+                </h3>
+                <p class="prices__price">150 руб. / занятие</p>
+                <ul class="prices__time">
+                    <li>пн 9:00 — 10:00</li>
+                    <li>ср 9:00 — 10:00</li>
+                    <li>пт 9:00 — 10:00</li>
+                </ul>
+                <div class="prices__btn">
+                    <button data-modal>Записаться</button>
+                </div>
+            </div>
+            <div class="prices__item prices__item--darker">
+                <span class="prices__no">02</span>
+                <h3 class="prices__level">
+                    уровень <span>профи</span>
+                </h3>
+                <p class="prices__price">200 руб. / занятие</p>
+                <ul class="prices__time">
+                    <li>пн 18:00 — 19:30</li>
+                    <li>ср 18:00 — 19:30</li>
+                    <li>пт 18:00 — 19:30</li>
+                </ul>
+                <div class="prices__btn">
+                    <button data-modal>Записаться</button>
+                </div>
+            </div>
+            <div class="prices__item prices__item--darkest">
+                <span class="prices__no">03</span>
+                <h3 class="prices__level">
+                    уровень <span>мастер</span>
+                </h3>
+                <p class="prices__price">350 руб. / занятие</p>
+                <ul class="prices__time">
+                    <li>пн 20:00 — 21:30</li>
+                    <li>ср 20:00 — 21:30</li>
+                    <li>пт 20:00 — 21:30</li>
+                </ul>
+                <div class="prices__btn">
+                    <button data-modal>Записаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="training" class="training">
+        <h2 class="title training__title">Как проходят занятия</h2>
+        <div class="training__items">
+            <div class="training__item">
+                <h3 class="training__subtitle">
+                    Дыхательные техники
+                </h3>
+                <div class="training__img">
+                    <img src="img/content/01.png" alt="Дыхательные техники">
+                </div>
+                <div class="training__text">
+                    <p class="text">
+                        Специальные дыхательные упражнения помогут сконцентрировать внимание и сфокусировать сознание на
+                        мышцах тела
+                    </p>
+                </div>
+            </div>
+            <div class="training__item">
+                <h3 class="training__subtitle">
+                    Разминка
+                </h3>
+                <div class="training__img">
+                    <img src="img/content/02.png" alt="Разминка">
+                </div>
+                <div class="training__text">
+                    <p class="text">
+                        Перед началом занятия разогреваем тело: проработываем мышцы спины, шеи, выполняем упражнения на
+                        баланс
+                        под спокойную музыку
+                    </p>
+                </div>
+            </div>
+            <div class="training__item">
+                <h3 class="training__subtitle">
+                    Основной блок
+                </h3>
+                <div class="training__img">
+                    <img src="img/content/03.png" alt="Основной блок">
+                </div>
+                <div class="training__text">
+                    <p class="text">
+                        Упражнения выполняются лежа на коврике без оборудования или с малым оборудованием, в медленном
+                        темпе
+                    </p>
+                </div>
+            </div>
+            <div class="training__item">
+                <h3 class="training__subtitle">
+                    Стрейчинг
+                </h3>
+                <div class="training__img">
+                    <img src="img/content/04.png" alt="Стрейчинг">
+                </div>
+                <div class="training__text">
+                    <p class="text">
+                        В конце занятия выполняем специальные упражнения для развития гибкости, снятия усталости,
+                        стресса и мышечного напряжения
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <h2 class="title reviews__title">Отзывы</h2>
+        <div class="reviews__slider">
+            <div class="reviews__slides">
+                <div class="reviews__slide">
+                    <div class="reviews__item">
+                        <div class="reviews__img">
+                            <img src="img/content/reviews/01.png" alt="Вероника Кулешова">
+                        </div>
+                        <div class="reviews__content">
+                            <h3 class="reviews__name">Вероника Кулешова</h3>
+                            <div class="reviews__info">
+                                <span class="reviews__age">25 лет</span>
+                                <ul class="reviews__links">
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--vk">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 801 453">
+                                                <path d="M689 288c26 26 54 50 78 79 11 12 21 25 28 40 11 21 1 44-18 45H661c-30 3-54-9-74-30l-47-51c-6-7-13-13-21-18-16-11-30-8-39 9s-11 36-12 54c-1 28-9 35-37 36-59 3-115-6-167-36-46-26-81-63-112-105C92 230 46 140 4 48c-9-21-2-32 21-32h114c15 0 25 9 31 23 21 51 46 99 78 144 8 12 17 23 29 32 14 9 24 6 30-9 4-10 6-20 7-30 3-35 3-70-2-105-3-22-16-36-37-41-12-2-10-6-4-12 9-11 18-18 35-18h132c21 4 25 13 28 34v147c0 8 4 32 19 37 11 4 19-6 26-13 32-33 54-73 74-114 9-18 17-37 24-55 6-14 14-21 30-21h127l11 1c21 4 27 13 21 34-11 33-31 60-51 87l-64 87c-20 27-18 41 6 64z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--inst">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97">
+                                                <path d="M85 0c6 0 12 5 12 12v73c0 7-6 12-12 12H12C6 97 0 92 0 85V12C0 5 6 0 12 0zM66 15v11a4 4 0 0 0 5 4h11a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H71a4 4 0 0 0-5 4zm12 26a28 28 0 0 1 1 8c0 16-14 30-30 30-17 0-31-14-31-30l2-8h-9v41a4 4 0 0 0 4 4h67a4 4 0 0 0 4-4V41zM49 29c-11 0-20 9-20 19 0 11 9 19 20 19 10 0 19-8 19-19 0-10-9-19-19-19z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews__text">
+                                <p class="text">
+                                    Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело
+                                    подтянулось, улучшилась осанка, появился пресс.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__item">
+                        <div class="reviews__img">
+                            <img src="img/content/reviews/02.png" alt="Елизавета Смирнова">
+                        </div>
+                        <div class="reviews__content">
+                            <h3 class="reviews__name">Елизавета Смирнова</h3>
+                            <div class="reviews__info">
+                                <span class="reviews__age">29 лет</span>
+                                <ul class="reviews__links">
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--vk">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 801 453">
+                                                <path d="M689 288c26 26 54 50 78 79 11 12 21 25 28 40 11 21 1 44-18 45H661c-30 3-54-9-74-30l-47-51c-6-7-13-13-21-18-16-11-30-8-39 9s-11 36-12 54c-1 28-9 35-37 36-59 3-115-6-167-36-46-26-81-63-112-105C92 230 46 140 4 48c-9-21-2-32 21-32h114c15 0 25 9 31 23 21 51 46 99 78 144 8 12 17 23 29 32 14 9 24 6 30-9 4-10 6-20 7-30 3-35 3-70-2-105-3-22-16-36-37-41-12-2-10-6-4-12 9-11 18-18 35-18h132c21 4 25 13 28 34v147c0 8 4 32 19 37 11 4 19-6 26-13 32-33 54-73 74-114 9-18 17-37 24-55 6-14 14-21 30-21h127l11 1c21 4 27 13 21 34-11 33-31 60-51 87l-64 87c-20 27-18 41 6 64z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--inst">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97">
+                                                <path d="M85 0c6 0 12 5 12 12v73c0 7-6 12-12 12H12C6 97 0 92 0 85V12C0 5 6 0 12 0zM66 15v11a4 4 0 0 0 5 4h11a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H71a4 4 0 0 0-5 4zm12 26a28 28 0 0 1 1 8c0 16-14 30-30 30-17 0-31-14-31-30l2-8h-9v41a4 4 0 0 0 4 4h67a4 4 0 0 0 4-4V41zM49 29c-11 0-20 9-20 19 0 11 9 19 20 19 10 0 19-8 19-19 0-10-9-19-19-19z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews__text">
+                                <p class="text">
+                                    Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений
+                                    на
+                                    пресс, бедра и спину. Мышцы подтянулись, появился рельеф и хорошее настроение :)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slide">
+                    <div class="reviews__item">
+                        <div class="reviews__img">
+                            <img src="img/content/reviews/03.png" alt="Кристина Егорова">
+                        </div>
+                        <div class="reviews__content">
+                            <h3 class="reviews__name">Кристина Егорова</h3>
+                            <div class="reviews__info">
+                                <span class="reviews__age">23 года</span>
+                                <ul class="reviews__links">
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--vk">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 801 453">
+                                                <path d="M689 288c26 26 54 50 78 79 11 12 21 25 28 40 11 21 1 44-18 45H661c-30 3-54-9-74-30l-47-51c-6-7-13-13-21-18-16-11-30-8-39 9s-11 36-12 54c-1 28-9 35-37 36-59 3-115-6-167-36-46-26-81-63-112-105C92 230 46 140 4 48c-9-21-2-32 21-32h114c15 0 25 9 31 23 21 51 46 99 78 144 8 12 17 23 29 32 14 9 24 6 30-9 4-10 6-20 7-30 3-35 3-70-2-105-3-22-16-36-37-41-12-2-10-6-4-12 9-11 18-18 35-18h132c21 4 25 13 28 34v147c0 8 4 32 19 37 11 4 19-6 26-13 32-33 54-73 74-114 9-18 17-37 24-55 6-14 14-21 30-21h127l11 1c21 4 27 13 21 34-11 33-31 60-51 87l-64 87c-20 27-18 41 6 64z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="reviews__social reviews__social--inst">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 97">
+                                                <path d="M85 0c6 0 12 5 12 12v73c0 7-6 12-12 12H12C6 97 0 92 0 85V12C0 5 6 0 12 0zM66 15v11a4 4 0 0 0 5 4h11a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H71a4 4 0 0 0-5 4zm12 26a28 28 0 0 1 1 8c0 16-14 30-30 30-17 0-31-14-31-30l2-8h-9v41a4 4 0 0 0 4 4h67a4 4 0 0 0 4-4V41zM49 29c-11 0-20 9-20 19 0 11 9 19 20 19 10 0 19-8 19-19 0-10-9-19-19-19z"></path>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews__text">
+                                <p class="text">
+                                    Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня.
+                                    После
+                                    занятий появилась лекость в мышцах и свобода движений. Приходите!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2 class="title contacts__title">Контакты</h2>
+        <div class="contacts__items">
+            <div class="contacts__item">
+                <h3 class="contacts__subtitle">Адрес</h3>
+                <p class="text">г. Кропоткин<br>ул. Дугинец 10а</p>
+            </div>
+            <div class="contacts__item">
+                <h3 class="contacts__subtitle">Телефон</h3>
+                <p class="text">+7 918 365 06 07</p>
+            </div>
+            <div class="contacts__item">
+                <h3 class="contacts__subtitle">E-mail</h3>
+                <p class="text"><u>pilatesplus@gmail.com</u></p>
+            </div>
+        </div>
+        <div class="contacts__map">
+            <div class="contacts__marker">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 55">
+                    <path d="M34 33L19 55 4 33c-6-8-5-21 1-27a19 19 0 0 1 28 0c6 6 7 19 1 27zm-8-14c0-4-3-7-7-7s-7 3-7 7 3 7 7 7 7-3 7-7z"></path>
+                    <path fill="#93a669"
+                          d="M34 33L19 55 4 33c-6-8-5-21 1-27a19 19 0 0 1 28 0c6 6 7 19 1 27zm-8-14c0-4-3-7-7-7s-7 3-7 7 3 7 7 7 7-3 7-7z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block modal %}
+    <div class="modal" id="modal">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__inner">
+                <button class="modal__close" data-micromodal-close></button>
+                <div class="modal__content">
+                    <h3 class="modal__title">Хочешь записаться на занятие?</h3>
+                    <h4 class="modal__subtitle">
+                        Оставьте контакты и наши менеджеры
+                        свяжутся с вами в ближайшее время
+                    </h4>
+                    <form class="form">
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="phone" data-pristine-phone>
+                            <label class="form__label">Телефон <sup>*</sup></label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="name" data-pristine-name>
+                            <label class="form__label">Имя <sup>*</sup></label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" type="text" name="email" data-pristine-email>
+                            <label class="form__label">E-mail <sup>*</sup></label>
+                        </div>
+                        <div class="form__group form__group--checkbox">
+                            <input type="checkbox" id="agree" class="form__checkbox" data-pristine-agree>
+                            <label for="agree" class="form__label form__label--checkbox">
+                                Я согласен на обработку персональных данных
+                            </label>
+                        </div>
+                        <button type="submit" class="form__submit">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

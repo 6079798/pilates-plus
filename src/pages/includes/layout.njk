@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {#<meta name="viewport" content="width=***width***">#}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Студия пилатеса{% endblock %}</title>
+    <!-- build:remove -->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body class="page">
+<div class="page__container">
+    {% include 'header.njk' %}
+    {% block content %}{% endblock %}
+    {% include 'footer.njk' %}
+</div>
+{% block modal %}{% endblock %}
+<script src="js/main.min.js"></script>
+</body>
+</html>
